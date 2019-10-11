@@ -20,7 +20,7 @@ A sample conf file is located in the `boot` folder on the SD card, but check htt
     ```
     export WIFIPASS='password'
     ```
-    even if it contains other characters that might otherwise be special to bash, like \\, * and $ (but note that the \\ should still be escaped with an additional \\ in order for the password to be correctly handled)
+    even if it contains other characters that might otherwise be special to bash, like \\, * and $ (but note that the \\ should still be escaped with an additional \\ in order for the password to be correctly handled).
     
     If the password does contain a single quote, you will need to use a different syntax. E.g. if the password is `pass'word`, you would use:
     ```
