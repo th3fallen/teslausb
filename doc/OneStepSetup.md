@@ -6,7 +6,7 @@ This is a streamlined process for setting up the Pi. You'll flash a preconfigure
 
 * Assumes your Pi has access to Wifi, with internet access (during setup). (But all setup methods do currently.) USB networking is still enabled for troubleshooting or manual setup
 * This image will work for either _headless_ (tested) or _manual_ (tested less) setup.
-* Currently not tested with the rsync/rclone methods when using headless setup, however you can specify 'none' as the archive method in the config file, which will configure the pi as a wifi-accessible USB drive, so you can then configure rclone/rsync and rerun the setup-teslausb script.
+* Currently not tested with the rsync/rclone methods when using headless setup, however, you can specify 'none' as the archive method in the config file, which will configure the pi as a wifi-accessible USB drive, so you can then configure rclone/rsync and rerun the setup-teslausb script.
 
 ## Configure the SD card before first boot of the Pi
 
@@ -20,7 +20,7 @@ A sample conf file is located in the `boot` folder on the SD card, but check htt
     ```
     export WIFIPASS='password'
     ```
-    even if it contains other characters that might otherwise be special to bash, like \\, * and $ (but note that the \\ should still be escaped with an additional \\ in order for the password to be correctly handled)
+    even if it contains other characters that might otherwise be special to bash, like \\, * and $ (but note that the \\ should still be escaped with an additional \\ in order for the password to be correctly handled).
     
     If the password does contain a single quote, you will need to use a different syntax. E.g. if the password is `pass'word`, you would use:
     ```
